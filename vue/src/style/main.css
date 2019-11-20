@@ -1,0 +1,375 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html{
+  margin: 0;
+}
+#app {
+  height: 100vh;
+  /* width: 100vw; */
+  background: #E2E2E2;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* 登录界面按钮样式-登录-注册-找回密码 */
+.btn{
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* 登录界面 tabs居中 */
+.tabs .el-tabs__nav-wrap,.is-top{
+  display: flex;
+  justify-content: center;
+}
+/* 所有组件标题
+ */
+ .title {
+  height: 30px;
+  display: flex;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  padding: 0 0 10px 30px;
+}
+ /* --
+ - */
+
+/*****HOME*****/
+#Home {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*main内容*/
+.main {
+  background: #E2E2E2;
+  height: 96%;
+}
+
+.container {
+  height: 94%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: white;
+}
+
+.pagination {
+  margin-top: 10px;
+}
+
+/*标题*/
+.container h2 {
+  margin: 10px 0;
+}
+
+/*路由跳转动画*/
+
+.move-enter,
+.move-leave {
+  opacity: 0;
+}
+
+
+/*****HEADER 头部*****/
+header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 15px 0;
+  vertical-align: bottom;
+  font-size: 22px;
+  color: #1D1D1D;
+  background-color: #fff;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+
+}
+
+.collapse-btn {
+  float: left;
+  height: 100%;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+/* $$*head头部样式** */
+.top-nav {
+  display: flex;
+  /* -webkit-box-flex: 1; */
+  flex: 1;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.top-nav>div {
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.el-breadcrumb span {
+  line-height: 25px;
+}
+
+/*退出or设置*/
+.head .el-dropdown {
+  color: #1D1D1D;
+  font-size: 20px;
+}
+
+
+/*****SIDEBAR左侧边栏*****/
+#sidebar-left {
+  background-color: rgb(36, 41, 46);
+  padding-top: 80px;
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+}
+
+#sidebar-left>ul {
+  height: 100%;
+}
+
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: 160px;
+  min-height: 400px;
+}
+
+.content-collapse {
+  left: 64px;
+}
+
+
+
+/*****TAGS 顶部标签 *****/
+.tags {
+  margin: 3px 0;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  background: #F0F0F0;
+  height: 36px;
+}
+
+.tags .tag-box {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.tags ul {
+  align-content: center;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.tags li {
+  align-items: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 12px;
+  height: 26px;
+  list-style: none;
+  line-height: 26px;
+  margin: 0 6px;
+  padding: 0 6px;
+  white-space: nowrap;
+}
+
+.tags li a {
+  display: block;
+  color: #24292e;
+  text-decoration: none;
+}
+
+/*关闭标签按钮*/
+.tag-close-box .el-dropdown span {
+  cursor: pointer;
+}
+
+/*选中状态*/
+.tags li.active {
+  background: white;
+}
+
+.tags li.active a {
+  color: black;
+}
+
+/*删除*/
+.tag_delete {
+  border-radius: 50%;
+  color: black;
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  width: 16px;
+  margin-left: 3px;
+  text-align: center;
+
+}
+
+.tag_delete:hover {
+  background: #24292e;
+  color: #fff;
+
+}
+
+.tags .active .tag_delete:hover {
+  background: #fff;
+  color: #24292e;
+}
+
+.tagi {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e9eaec;
+  margin-right: 5px;
+}
+
+.tagiactive {
+  background: #1bb1de;
+}
+
+
+.el-row {
+  margin-bottom: 15px;
+}
+
+table .cell {
+  text-align: center;
+}
+
+
+
+/*右侧栏*/
+.el-submenu__title i {
+  color: #fff !important;
+}
+
+.el-menu-item i {
+  color: #fff;
+}
+
+
+
+
+.upauth {
+  color: #56BD56;
+  margin-left: 30px;
+}
+
+.status {
+  font-size: 12px;
+  display: inline-block;
+  padding: 6px 10px 5px 10px;
+  margin: 0 10px 8px 10px;
+  background: #56BD56;
+  color: white;
+  border-radius: 5px;
+}
+
+
+.editable.editable_click .editable-column.editable-col_edit,
+.editable.editable_dblclick .editable-column.editable-col_edit {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+.withdraw .el-pagination,
+.container .el-pagination {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 39px 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.siderbar-icon i{
+  color:#fff;
+}
+
+.userManage .totalOrderNum{
+  display: inline;
+}
+/* 新 */
+/* 搜索按钮复用 */
+.el-icon-search{
+  color:white;
+  /* background: linear-gradient(#007cd4,#8fcbe2); */
+  background: linear-gradient(#6dd5ed,#409EFF);
+  
+  border: 0;
+}
+.el-button:focus{
+  color: white;
+}
+.el-icon-search:hover{
+  color:white;
+  background: linear-gradient(#007cd4,#8fcbe2);
+  
+  /* background: linear-gradient(#04668c,#1bb1de); */
+  /* background: linear-gradient(#6dd5ed,#409EFF); */
+  
+}
+.tag-close-box .global-3d{
+  background: linear-gradient(#6dd5ed,#409EFF);
+}
+/* ***elinput*** */
+.elbutton10point{
+  width: 10%;
+}
+.elinput30point{
+  width: 30%;
+}
+.elinput50point{
+  width: 50%;
+}
+.elinput80point{
+  width: 80%;
+}
+/* +++++ */
+/* 我要提现 */
+/* 解决两个按钮不能对其 */
+.el-button+.el-button {
+  margin-left: 0px;
+}
+/* ---- */
+.historyWithdraw .el-table thead tr th{
+  background: #ececec !important;
+  color: black;
+}
+/* ————我要提现结束 */
+/* 流量主管理 */
+/* 弹框 */
+.withdraw .el-dialog{
+  margin-top: 1vh;
+  width: 80%;
+}
+/* ---
+ */
